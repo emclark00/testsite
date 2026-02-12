@@ -1,0 +1,65 @@
+repository: 'emclark00/testsite'
+
+title: EC Test Site
+
+subtitle: Just for fun and figuring shit out
+
+description: learning how to use github and stuff
+
+author: "emclark00"
+authorname: "Emily Clark"
+sitelogo: HWW-logo.jpg
+
+sitedate : 2026
+
+##############################################
+
+fontchoice: roboto
+
+colorchoice: lavenderred
+
+accentchoice: accent-purple
+
+##############################################
+
+collections:
+  items:
+    output: true
+    permalink: /:collection/:path:output_ext
+    contributor: true
+    creator: true
+    group: true
+  authors:
+    output: false
+    name: true
+
+##############################################
+
+url:
+
+baseurl: ""
+
+urlimg: '/assets/img/'
+urlitemimg: '/assets/items/'
+permalink: /:categories/:year/:month/:day/:title:output_ext
+
+markdown : kramdown
+syntax_highlighter: rouge
+
+exclude :
+    - Gemfile
+    - Gemfile.lock
+    - CNAME
+    - LICENSE
+    - README.md
+    - pages/PagesOld
+    - INSTALL.md
+    - screenshot.png
+include: ['_pages']
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-seo-tag
